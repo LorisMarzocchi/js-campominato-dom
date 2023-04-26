@@ -89,9 +89,9 @@ btnPlay.addEventListener("click", function() {
     }
 });
 
-// function reset() {
-//     window.location.reload();
-// }
+function reset() {
+    window.location.reload();
+}
 
 
 // FUNZIONE GENERATE GRIGLIA
@@ -113,13 +113,13 @@ function arrBomb(maxTry) {
     }
     return bombs;
 }
-// FUNZIONE RESET
+// FUNZIONE RESET GAME
 function resetGame() {
 //   points = 0;
 //   bombs = [];
-  const allElements = document.querySelectorAll('*');
+  const allElements = document.querySelectorAll('.cell, #btnPlay, #level');
   for (let i = 0; i < allElements.length; i++) {
     allElements[i].style.pointerEvents = 'none';
-    document.getElementById('punteggio').innerHTML = ((points) + '...fai il refresh della pagina');
+    document.getElementById('punteggio').innerHTML = ((points) + '...Clicca il pulsante reset');
   }
 }
