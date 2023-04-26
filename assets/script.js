@@ -71,7 +71,7 @@ btnPlay.addEventListener("click", function() {
             this.classList.toggle("clicked");
             if (bombs.includes(parseInt(this.textContent))) {
                 this.classList.add('color2');
-                document.getElementById('punteggio').innerHTML = (points);
+                // document.getElementById('punteggio').innerHTML = (points);
                 resetGame();
             }
             else {
@@ -115,11 +115,11 @@ function arrBomb(maxTry) {
 }
 // FUNZIONE RESET
 function resetGame() {
-  points = 0;
-  bombs = [];
+//   points = 0;
+//   bombs = [];
   const allElements = document.querySelectorAll('*');
   for (let i = 0; i < allElements.length; i++) {
     allElements[i].style.pointerEvents = 'none';
-    document.getElementById('risPunti').innerHTML = ('Fai il refresh della pagina');;
+    document.getElementById('punteggio').innerHTML = ((points) + '...fai il refresh della pagina');
   }
 }
