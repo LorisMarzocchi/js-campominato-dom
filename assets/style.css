@@ -60,17 +60,15 @@ header{
     color: white;
 }
 
-
 .color2{
     background-color: aquamarine;
     color: black;
 
 }
 
-
-.color3{
+/* .color3{
     background-color: orange;  
-}
+} */
 
 .logo{
     display: flex;
