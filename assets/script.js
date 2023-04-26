@@ -21,7 +21,7 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 Consigli del giorno: :party_wizard:
 Scriviamo prima cosa vogliamo fare passo passo in italiano, dividiamo il lavoro in micro problemi.*/
 
-
+debugger;
 const btnPlay = document.querySelector('#btnPlay');
 const btnReset = document.querySelector('#btnReset');
 let points = 0;
@@ -61,6 +61,11 @@ btnPlay.addEventListener("click", function() {
         
 
     }
+    else if(level.value == ""){
+        reset();
+        return;
+    }
+
     bombs = arrBomb(maxTry);
 
     const listCard = document.querySelectorAll('.cell');
